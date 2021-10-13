@@ -1,0 +1,60 @@
+html{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+body{
+    background-color: #e2ecf5;
+}
+
+h1{
+    color: #5D147C;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 60px;
+    
+}
+#logobici{
+    float: left;
+    width: 175px;
+    height: 175px;
+
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5D147C;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color:#B6C2F5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #b516ff;
+  }
+
+.footer {
+    background-color: #5D147C;
+    padding: 10px;
+    text-align: center;
+}
+.loguearse{
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
