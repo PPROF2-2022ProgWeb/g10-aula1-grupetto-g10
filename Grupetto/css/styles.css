@@ -6,20 +6,28 @@ body{
     background-color: #e2ecf5;
 }
 
-h1{
-    color: #5D147C;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    font-size: 60px;
-    
+.header1{
+  background-color:#795b86; 
 }
-#logobici{
-    float: left;
-    width: 175px;
-    height: 175px;
 
+h1{  
+    color: #5D147C;
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+    margin-left: 0%; 
+    margin-right: 0%;   
 }
+
+#logobici{
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    width: 75px;
+    height: 75px;
+}
+
 ul{
     list-style-type: none;
     margin: 0;
