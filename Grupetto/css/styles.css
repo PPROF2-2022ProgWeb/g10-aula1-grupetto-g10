@@ -19,6 +19,21 @@ h1{
     margin-right: 0%;   
 }
 
+h2{  
+  text-align: center;
+  color: #b840eb;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 10%;
+  margin-left: 0%; 
+  margin-right: 0%;   
+}
+#rutas{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
 #logobici{
 
     margin-left: 5px;
