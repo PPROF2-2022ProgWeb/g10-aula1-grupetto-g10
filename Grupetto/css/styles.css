@@ -19,6 +19,24 @@ h1{
     margin-right: 0%;   
 }
 
+h2{  
+  text-align: center;
+  color: #b840eb;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0%;
+  margin-left: 0%; 
+  margin-right: 0%;   
+}
+#ciclista{
+  margin-top: 100px;
+}
+#rutas{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
 #logobici{
 
     margin-left: 5px;
@@ -37,9 +55,17 @@ ul{
   }
   
   li {
+    color: #b18cc0;
+    float: right;
+  }
+  #smbuttons{
+    margin-right: 7px;
+    margin-top: 7px;
+    float: right;
+  }
+  #DescargaApp{
     float: left;
   }
-  
   li a {
     display: block;
     color:#B6C2F5;
