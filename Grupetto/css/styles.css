@@ -63,6 +63,9 @@ ul{
     margin-top: 7px;
     float: right;
   }
+  #DescargaApp{
+    float: left;
+  }
   li a {
     display: block;
     color:#B6C2F5;
