@@ -1,3 +1,5 @@
+drop database grupetto;
+
 -- MySQL Workbench Forward Engineering
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
@@ -146,3 +148,41 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+INSERT INTO `grupetto`.`pais` (`idPais`, `Nombre`) VALUES 
+('1', 'argentina'),
+('2', 'brasil');
+
+INSERT INTO `grupetto`.`ciudad` (`idCiudad`, `Nombre`, `Codigo postal`, `Pais_idPais`) VALUES 
+('1', 'cordoba', '1234', '1');
+
+INSERT INTO `grupetto`.`usuario` (`idUsuario`, `Nombre`, `Apellido`, `email`, `contraseña`, `Fecha_Creacion`) VALUES 
+('1', 'marcos', 'santana', 'marcos@algo', '1234', '2021/2/1'),
+('2', 'juan', 'perez', 'juan@algo', '123456', '2021/2/1'),
+('3', 'nicolas' , 'gutierrez', 'nico@algo' , '1234' , '2021/4/4'),
+('4', 'emanuel' , 'martinez', 'ema@algo' , '1234' , '2021/4/3');
+
+INSERT INTO `grupetto`.`perfil` (`idPerfil`, `Usuario_idUsuario`, `Amigos`, `Km Recorriods`, `genero`, `Apodo`, `Biografia`, `Pais_idPais`) VALUES 
+('1', '1', '0', '2', 'm', 'pancho', 'a ', '1');
+
+select nombre
+from usuario
+where nombre = 'juan';
+
+INSERT INTO `grupetto`.`comentario` (`idComentario`, `Contenido`, `Fecha_Publicacion`, `Perfil_idPerfil`) VALUES 
+('1', 'hola', '2020/5/1', '1');
+
+INSERT INTO `grupetto`.`recorrido` (`idRecorrido`, `Km`, `Likes`, `DisLikes`, `Fecha_Creacion`, `Autor_idPerfil`, `Comentario_idComentario`, `Ciudad_idCiudad`) VALUES 
+('1', '12', '0', '0', '2020/5/7', '1', '1', '1');
+
+update usuario
+set email='papa27@hotmail'
+where nombre='juan';
+
+update usuario
+set contraseña='papa'
+where contraseña='1234';
+
+delete from usuario
+where idUsuario='3';
