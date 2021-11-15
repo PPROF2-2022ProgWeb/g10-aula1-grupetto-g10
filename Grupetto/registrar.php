@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+
 <body>
-    <header class="header1">       
+<header class="header1">       
         <h1><img id="logobici" src="img/logoSinNombre.png" alt="logo Grupetto"> Grupetto</h1>
     </header>   
 
@@ -29,32 +30,26 @@
     </nav>
 
     <main>
-        <div class="logo">
-            <p>Grupetto es una aplicacion con el objetivo de facilitar los encuentros sociales para andar en bici</p>
+
+       <div class="container">
+       <?php
+            $nombre = $_POST["nombre"];
+            $apellido = $_POST["apellido"];
+            $direccion = $_POST["email"];
+            $usuarioF = $_POST["usuario"];
+
+            echo print "  <p>Su Usuario es <strong>$usuarioF</strong>.</p>\n";
+            print "\n";
+            print "  <p>Su nombre es <strong>$nombre</strong>.</p>\n";
+            print "\n";
+            print "  <p>Su apellido es <strong>$apellido</strong> .</p>\n";
+            print "\n";
+            print "  <p>Su mail es <strong>$direccion</strong>.</p>\n";
+            print "\n";
+        ?>  
         </div>
 
-        <div class="loguearse">    
-        
-        
-            <a href="login.html"><button> Iniciar Sesion </button></a>
-            <a href="register.html"><button> Registro </button></a>    
-        </div>
-       
-        <div class="container">
-            <h2 id="ciclista"> <iframe src="https://giphy.com/embed/l0HluULNylbTu44Ao" width="240" height="135" frameBorder="0" class="giphy-embed" ></iframe></h2>
-        </div>
-       <div class="container">
-            <h2>LAS MEJORES RUTAS PARA PEDALEAR</h2>
-            <p id="rutas">En la pagina de Wikiloc vas a poder encontrar diferentes rutas al aire libre para recorrer con tu bici: </p>
-            <a href="https://es.wikiloc.com/rutas/ciclismo/argentina/provincia-de-buenos-aires" target="blank"> <h3>Rutas en Buenos Aires</h3> </a>
-            <a href="https://es.wikiloc.com/rutas/mountain-bike/argentina/cordoba" target="blank"> <h3>Rutas en Córdoba</h3> </a>
-            <a href="https://es.wikiloc.com/rutas/outdoor/argentina/santa-fe" target="blank"> <h3>Rutas en Santa Fé</h3> </a>
-            <a href="https://es.wikiloc.com/rutas/outdoor/argentina/mendoza" target="blank"> <h3>Rutas en Mendoza</h3> </a>
-            <a href="https://es.wikiloc.com/rutas/outdoor/argentina" target="blank"> <h3>Rutas en el resto del país</h3> </a>
-       </div>
-       
-        
-        
+    
     </main>
 
     <footer>
@@ -72,6 +67,7 @@
         </div>
 
     </footer>
-    
+
 </body>
 </html>
+
