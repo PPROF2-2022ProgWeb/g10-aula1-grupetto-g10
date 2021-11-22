@@ -21,16 +21,18 @@
         <div class="navbar">
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="calcu.html">Calc.Tiempo</a></li>
+                <li><a href="contact.html">Contacto</a></li>  
+                <li><a href="calcu.html">Calculadora de Tiempo</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="principal.php">Registro</a></li>
 
             </ul>
         </div>
     </nav>
 
-    <main>
+    <center>
         <div class="calcu" id="calcu">
+            <h1>Ingrese una fecha</h1>
             <input type="date" id="fechaNacimiento" min="1930-01-01" max="2016-12-31">
             <h1 id="edad"></h1>
             <script src="js/funcionesGrupo10.js"></script>
@@ -38,26 +40,20 @@
 
         <div>
             <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
-            style="background-color:#4B088A;width:120px;height:20px;padding:40px;">
+            style="background-color:#bd98e0;width:200px;height:200px;padding:50px;">
              Mouse Over Me</div>
 
             <script>
             function mOver(obj) {
-            obj.innerHTML = "Thank You"
-        }
+            obj.innerHTML = "Gracias"
+             }
 
-
-
-function mOut(obj) {
-  obj.innerHTML = "Mouse Over Me"
-}
-</script
-
+            function mOut(obj) {
+                obj.innerHTML = "Pasa el mouse sobre mi"
+            }
+            </script>
         </div>
-
-
-
-    </main>
+    </center>
 
     <footer>
         <div class="footer">
