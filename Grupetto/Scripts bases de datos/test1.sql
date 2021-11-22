@@ -27,6 +27,10 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `login`
 --
 
+CREATE SCHEMA IF NOT EXISTS `test1` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;
+USE `test1` ;
+
+
 CREATE TABLE `login` (
   `usuario` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL

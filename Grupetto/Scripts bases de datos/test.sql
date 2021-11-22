@@ -21,6 +21,9 @@ SET time_zone = "+00:00";
 -- Base de datos: `test`
 --
 
+CREATE SCHEMA IF NOT EXISTS `test` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;
+USE `test` ;
+
 -- --------------------------------------------------------
 
 --
