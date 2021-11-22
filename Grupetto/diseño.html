@@ -1,0 +1,140 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion en Grupetto</title>
+    <link rel="icon" href="img/iconologo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    
+
+<style>
+    
+                body{background-color: white;}
+                table 
+            {
+            border: 1px solid #353A46;
+            background-color: #ccb4f1;
+            }
+            input[type=text], input[type=password]
+            {
+            width: 100%;
+            padding: 8px 20px;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+            }
+            input[type=submit]
+            {
+            background-color: #6b3f85;
+            color:white;
+            padding: 8px 10px;
+            margin: 8px 0px;
+            border: solid;
+            cursor: pointer;
+            width: 40%;
+            }
+
+            
+
+
+
+</style>
+</head>
+
+<body>
+
+    <header class="header1">       
+        <h1><img id="logobici" src="img/logoSinNombre.png" alt="logo Grupetto"> Grupetto</h1>
+    </header> 
+
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="#about">Acerca de nosotros</a></li>
+                <li><a href="calcu.html">Calculadora de Tiempo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+<center>
+<form name="Mantenimiento" action="mantenimiento.php" method="post">
+<table border="1">
+
+  
+
+<tr><td colspan="4" style="background-color:#6b3f85; padding-bottom:10px; padding-top:10px;"><label> Ingresa tus datos </label></td></tr>
+<tr>
+	<td><label>Usuario</label></td><td><input type="text" value="" maxlength="10" name="txtcodigo"></td>
+	<td><label>Correo</label></td><td><input type="text" value="" maxlength="25" name="txtedad" maxlength="25" size="20"></td>
+</tr>
+<tr>
+	<td><label>Nombre</label></td><td><input type="text" value="" maxlength="50" name="txtnombre"></td>
+	<td><label>Apellido</label></td><td><input type="text" value="" maxlength="9" size="20" name="txttelefono"></td>
+</tr>
+
+<tr><td colspan="4" align="center">
+<input type="submit" value="Nuevo" name="limpiardatos" >
+<input type="submit" value="Grabar" name="grabardatos" >
+<input type="submit" value="Modificar" name="modificardatos" >
+<input type="submit" value="Eliminar" name="eliminardatos">
+</td>
+</tr>
+
+<tr><td colspan="4"><label>Listado de Clientes </label></td></tr>
+
+<tr><td><label>Usuario</label></td>
+	<td><label>Nombre</label></td>
+	<td><label>Apellido</label></td>
+	<td><label>Correo</label></td>
+</tr>
+
+<?php 
+$sql="SELECT * FROM clientes";
+$result=mysqli_query($conn,$sql);
+
+while($mostrar=mysqli_fetch_array($result))
+{
+?>
+<tr> <td><?php echo $mostrar['codigo'] ?>
+	<td><?php echo $mostrar['nombre'] ?>
+     <td><?php echo $mostrar['telefono'] ?>
+	<td><?php echo $mostrar['edad'] ?>
+	
+
+</tr>
+<?php
+}
+
+?>
+
+</table>
+</form>
+</center>
+
+
+
+<footer>
+    <div class="footer">
+    <ul>
+        <li>Grupetto®️ 2021 todos los derechos reservados </li> <br>
+        
+    <a id="smbuttons" class="btn btn-sm btn-default" href="https://www.instagram.com/?hl=es" target="blank" role="button"><img src="img/InstagramLogo.png" alt="" width="20" height="20"> Instagram</a>
+    <a id="smbuttons" class="btn btn-sm btn-default" href="https://www.facebook.com/" target="blank" role="button"><img src="img/FacebookLogo.png" alt="" width="20" height="20"> Facebook</a>         
+    <a id="smbuttons" class="btn btn-sm btn-default" href="https://twitter.com/?lang=es" target="blank" role="button"><img src="img/twitter-logo.png" alt="" width="20" height="20"> Twitter</a>
+    <a id="DescargaApp" class="btn btn-sm btn-default" href="https://play.google.com/store/apps?hl=es_AR&gl=US" target="blank" role="button"><img src="img/PlayStoreLogo.png" alt="" width="20" height="20"> <b> DESCARGÁ NUESTRA APP</b></a>
+
+    </ul>
+    
+    </div>
+
+</footer>
+
+</body>
+</html>

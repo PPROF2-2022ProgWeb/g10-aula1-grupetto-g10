@@ -2,12 +2,12 @@ html{
     font-family: 'Fjalla One', sans-serif;
 }
 
-body{
-    background-color: #e2ecf5;
+body {
+  background-color: rgb(161, 111, 219);
 }
 
 .header1{
-  background-color:#795b86; 
+  background-color:#672a81; 
 }
 
 h1{  
@@ -55,7 +55,7 @@ ul{
   }
   
   li {
-    color: #b18cc0;
+    color: #d1aad4;
     float: right;
   }
   #smbuttons{
@@ -68,7 +68,7 @@ ul{
   }
   li a {
     display: block;
-    color:#B6C2F5;
+    color:#edd6f1;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -83,6 +83,10 @@ ul{
   }
 
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
     background-color: #5D147C;
     padding: 10px;
     text-align: center;
