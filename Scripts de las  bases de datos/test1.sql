@@ -20,7 +20,10 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `test1`
 --
-
+-- Schema Grupetto
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `test1` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;
+USE `test1` ;
 -- --------------------------------------------------------
 
 --
