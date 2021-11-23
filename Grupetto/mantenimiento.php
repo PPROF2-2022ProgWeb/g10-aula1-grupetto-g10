@@ -22,7 +22,7 @@ if(mysqli_query($conn,$sqlgrabar))
 	header("Location: principal.php");
 }else 
 {
-	echo "Error: " .$sql."<br>".mysql_error($conn);
+	echo "Error: " .$sql."<br>".mysqli_error($conn);
 }
 		
 		
@@ -38,7 +38,7 @@ if(mysqli_query($conn,$sqlmodificar))
 	header("Location: principal.php");
 }else 
 {
-	echo "Error: " .$sql."<br>".mysql_error($conn);
+	echo "Error: " .$sql."<br>".mysqli_error($conn);
 }
 		
 		
@@ -54,7 +54,7 @@ if(mysqli_query($conn,$sqleliminar))
 	header("Location: principal.php");
 }else 
 {
-	echo "Error: " .$sql."<br>".mysql_error($conn);
+	echo "Error: " .$sql."<br>".mysqli_error($conn);
 }
 		
 		
