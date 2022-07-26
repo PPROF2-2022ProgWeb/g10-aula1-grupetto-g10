@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+.header1{
+  background-color:#672a81; 
+}
+
+
+
+h1{  
+    color: #5D147C;
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+    margin-left: 0%; 
+    margin-right: 0%;   
+}
+
+h2{  
+  text-align: center;
+  color: #b840eb;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0%;
+  margin-left: 0%; 
+  margin-right: 0%;   
+}
+#ciclista{
+  margin-top: 100px;
+}
+#rutas{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+#logobici{
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    width: 75px;
+    height: 75px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  li {
+    color: #d1aad4;
+    float: right;
+  }
+  #smbuttons{
+    margin-right: 7px;
+    margin-top: 7px;
+    float: right;
+  }
+  #DescargaApp{
+    float: left;
+  }
+  li a {
+    display: block;
+    color:#edd6f1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #cf68ff;
+  }
+  
+  .active {
+    background-color: #b516ff;
+  }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+    background-color: #5D147C;
+    padding: 10px;
+    text-align: center;
+}
+.loguearse{
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+.mainLogin{
+  margin-left: 1%;
+  
+}
