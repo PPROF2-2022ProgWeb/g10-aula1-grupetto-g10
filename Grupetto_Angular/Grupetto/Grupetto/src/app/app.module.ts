@@ -5,21 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { MainpComponent } from './components/mainp/mainp.component';
+
 import { RegisterComponent } from './components/register/register.component';
+import { Error404Component } from './components/error404/error404.component';
+import { LoginComponent } from './components/login/login.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    MainpComponent,
     RegisterComponent,
-
+    Error404Component,
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
