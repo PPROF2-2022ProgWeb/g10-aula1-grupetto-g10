@@ -11,6 +11,7 @@ import { Error404Component } from './components/error404/error404.component';
 import { LoginComponent } from './components/login/login.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { LoginComponent } from './components/login/login.component';
     RegisterComponent,
     Error404Component,
     LoginComponent,
+    
     
   ],
   imports: [
