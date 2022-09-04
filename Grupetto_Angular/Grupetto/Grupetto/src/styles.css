@@ -2,6 +2,7 @@
 
 
 
+
 .header1{
   background-color:#672a81; 
 }
@@ -70,18 +71,21 @@ ul{
   
   li a {
     display: block;
-    color:#edd6f1;
+    color:#5D147C;
+    color:white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover:not(.active) {
-    background-color: #cf68ff;
+    background-color: #b6c2f5;
+    color: white;
   }
   
   .active {
-    background-color: #cf68ff;
+    background-color: #5D147C;
+    color: white;
   }
 
 .footer {
