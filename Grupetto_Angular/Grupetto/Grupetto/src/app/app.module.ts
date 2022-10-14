@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RegisterComponent } from './components/register/register.component';
 import { Error404Component } from './components/error404/error404.component';
 import { LoginComponent } from './components/login/login.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -20,6 +21,7 @@ import { LoginComponent } from './components/login/login.component';
     RegisterComponent,
     Error404Component,
     LoginComponent,
+    HeaderComponent,
     
     
   ],
